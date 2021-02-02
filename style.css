@@ -39,8 +39,11 @@ footer p{text-align: justify}
 #profil, #formations, #technologies, #soft_skills, #langues, #avantages{background-color: white; margin: 10% auto; padding: 4%;border-radius: 15px; box-shadow: 0 30px 20px grey}
 #bilan{background-color: white; border-radius: 15px 15px 0 0; border-bottom: none; padding: 4%}
 /** MOIBILE FIRST **/
-@media screen and (min-width: 768px){
+@media all and (min-width: 768px){
 main div, footer div{display: flex}
-main section, footer section{flex-basis: 35%}
+main section, footer section{flex-basis: 40%}
 #profil, #formations, #technologies, #soft_skills, #langues, #avantages{margin: 4% auto}
+#profil li:first-of-type{word-break: normal}
+#profil li{text-align: center}
+
 }
