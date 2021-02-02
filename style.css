@@ -1,0 +1,45 @@
+/** STYLE GENERALE **/
+html{scroll-behavior: smooth}
+body{background-color: #F2F2F2; font-family: KufiStandardGK}
+a{text-decoration: none}
+a:link, a:visited{color: #4D9EC6}
+a:hover, a:focus{color: #75FF42}
+.container{width: 95%; max-width: 1170px; margin: auto}
+h1{color: #043F96; font-family: impact; font-size: 3rem}
+h2{color: #043F96; font-family: "Apple Symbols"; font-size: 2rem}
+h1,h2,#titre p{text-align: center}
+#profil div{display: flex;flex-direction: column; justify-content: space-evenly}
+#profil li{margin: 2%; text-align: left}
+#profil li:first-of-type {word-break: break-word}
+#profil ul{margin: 0}
+#moi{object-fit: contain;width: 230px;margin: auto; border-radius: 15px}
+ul{list-style-type: none; padding: 0}
+#formations li:first-of-type, #formations li:{font-size: 1.4rem}
+#formations p{margin-bottom: 0; font-size: 1.4rem}
+#technologies p:first-of-type i{filter: grayscale(100%)}
+#technologies p i:hover{filter: none}
+.fab, .fas, .far{font-size: 3.5rem}
+.far{float: left}
+.fa-html5{color: #dd4d25}
+.fa-css3-alt{color: #1779B8}
+.fa-sass{color: #CF6BA0}
+.fa-git{color: #E94F32}
+.fa-js-square{color: #EFD81C}
+.fa-wordpress{color: #127297}
+.fa-php{color: #858FBC}
+.fa-node-js{color: #87BF00}
+.fa-lightbulb, .fa-hand-point-right, .fa-paperclip{margin-right: 7%}
+.fa-lightbulb{color: #F6C70A}
+.fa-html5, .fa-css3-alt, .fa-sass, .fa-git, .fa-js-square, .fa-wordpress, .fa-php, .fa-node-js, .fa-paperclip{transition: all 2s ease 0s}
+.fa-html5:hover, .fa-css3-alt:hover, .fa-sass:hover, .fa-git:hover, .fa-js-square:hover, .fa-wordpress:hover, .fa-php:hover, .fa-node-js:hover, .fa-paperclip:hover{transform: rotateY(360deg); transform: 3s}
+.fa-hand-point-right, strong, #formations p{color: #0065FC}
+#soft_skills,#profil li,#technologies p, footer{font-size: 1.4rem}
+footer p{text-align: justify}
+#profil, #formations, #technologies, #soft_skills, #langues, #avantages{background-color: white; margin: 10% auto; padding: 4%;border-radius: 15px; box-shadow: 0 30px 20px grey}
+#bilan{background-color: white; border-radius: 15px 15px 0 0; border-bottom: none; padding: 4%}
+/** MOIBILE FIRST **/
+@media screen and (min-width: 768px){
+main div, footer div{display: flex}
+main section, footer section{flex-basis: 35%}
+#profil, #formations, #technologies, #soft_skills, #langues, #avantages{margin: 4% auto}
+}
