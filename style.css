@@ -1,6 +1,6 @@
 /** STYLE GENERALE **/
 html{scroll-behavior: smooth}
-body{background-color: #F2F2F2; font-family: KufiStandardGK}
+body{background-color: #F2F2F2; text-align: center; font-family: KufiStandardGK}
 a{text-decoration: none}
 a:link, a:visited{color: #4D9EC6}
 a:hover, a:focus{color: #75FF42}
@@ -16,8 +16,9 @@ h1,h2,#titre p{text-align: center}
 ul{list-style-type: none; padding: 0}
 #formations li:first-of-type, #formations li:{font-size: 1.4rem}
 #formations p{margin-bottom: 0; font-size: 1.4rem}
-#technologies p:first-of-type i{filter: grayscale(100%)}
-#technologies p i:hover{filter: none}
+/**#technologies p:first-of-type i{filter: grayscale(100%)}
+#technologies p i:hover{filter: none}**/
+#technologies p:last-of-type{text-align: left}
 .fab, .fas, .far{font-size: 3.5rem}
 .far{float: left}
 .fa-html5{color: #dd4d25}
@@ -30,7 +31,7 @@ ul{list-style-type: none; padding: 0}
 .fa-node-js{color: #87BF00}
 .fa-lightbulb, .fa-hand-point-right, .fa-paperclip{margin-right: 7%}
 .fa-lightbulb{color: #F6C70A}
-.fa-html5, .fa-css3-alt, .fa-sass, .fa-git, .fa-js-square, .fa-wordpress, .fa-php, .fa-node-js, .fa-paperclip{transition: all 2s ease 0s}
+.fa-html5, .fa-css3-alt, .fa-sass, .fa-git, .fa-js-square, .fa-wordpress, .fa-php, .fa-node-js, .fa-paperclip{transition: all 1s cubic-bezier(.67,.4,.95,.1) 0s}
 .fa-html5:hover, .fa-css3-alt:hover, .fa-sass:hover, .fa-git:hover, .fa-js-square:hover, .fa-wordpress:hover, .fa-php:hover, .fa-node-js:hover, .fa-paperclip:hover{transform: rotateY(360deg); transform: 3s}
 .fa-hand-point-right, strong, #formations p{color: #0065FC}
 #soft_skills,#profil li,#technologies p, footer{font-size: 1.4rem}
