@@ -11,29 +11,30 @@ a:hover, a:focus{color: #fc2a32}
 h1{color: #043F96; font-family: impact}
 h2{color: #043F96; font-family: "Apple Symbols"; font-size: 2rem}
 h1, h2, header p{text-align: center; margin: 0}
-h3{text-align: left}
-ul{list-style-type: none; text-align: left}
-figure{display: flex; flex-direction: column; justify-content: space-evenly; align-items: center}
-footer p{text-align: justify; font-size: 1.5rem}
+h3{text-align: center; margin: auto; padding: 1rem}
+ul{list-style-type: none}
+figure{display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; position: relative}
+footer p{text-align: justify}
 .container{width: 95%; max-width: 1170px; margin: auto}
-#moi{object-fit: contain;width: 100%; margin-right: 2rem; border-radius: 50%;border: 1px solid grey}
+#moi{object-fit: contain; margin-right: 2rem; border-radius: 50%;border: 3px solid #525050; float: right; width: 15%}
 #name{display: flex; flex-direction: column; align-items: baseline}
 .upper1{text-transform: capitalize; font-size: 1.3rem}
 #upper2, #upper3{text-transform: uppercase}
 #upper2, h1{font-size: 2rem}
 .block{display: block}
-#colA{background-color: #AFAFAF}
-#colB{background-color: #DBDBDB}
-#colA div{display: flex;flex-direction: column; justify-content: space-evenly}
-#colA li{margin: 2%; text-align: left}
-#colA li:first-of-type {word-break: break-word}
-#colA ul{margin: 0}
+.colA{background-color: #AFAFAF}
+.colB{background-color: #DBDBDB}
+.colB h2{margin-top: 2rem}
+.colA div{display: flex;flex-direction: column; justify-content: space-evenly}
+.colA li{margin: 2%; text-align: left}
+.colA li:first-of-type {word-break: break-word}
+.colA ul{margin: 0}
 .col1{text-align: center}
 .col2{text-align: left}
-table{margin-top: 1rem}
 table .fas, table .fab{font-size: 1.5rem; margin-right: 2rem; color: white}
 table p{text-align: justify}
-thead, tfoot{text-align: left}
+thead, tfoot{text-align: center}
+p{padding: 0 2rem}
 #avantages{margin-top: 2rem; text-align: justify; background-color: white; padding: 1rem; border-radius: 15px; border: 4px dotted grey}
 #avantages i, #bilan i{font-size: 4rem; margin-right: 1rem}
 .langues{width: 5rem; margin: 1rem}
@@ -56,10 +57,12 @@ thead, tfoot{text-align: left}
 .fa-html5:hover, .fa-css3-alt:hover, .fa-sass:hover, .fa-git:hover, .fa-js-square:hover, .fa-wordpress:hover, .fa-php:hover, .fa-node-js:hover, .fa-paperclip:hover, figure img:hover{transform: rotateY(1500deg)}
 .fa-lightbulb{transition: all 3s cubic-bezier(1,1,1,1) 0s}
 .fa-lightbulb:hover{transform: scale(2)}
-.fa-hand-point-right, h2, strong{color: #0065FC}
+.fa-hand-point-right, h2, h3, strong{color: #0065FC}
+.fa-handshake{color: black}
 #nuage{width: 90%; margin: auto}
+#nuage2{position: absolute; width: 13rem}
 .projet{padding: 0.5rem; display: inline-block; border: 3px solid; background-color: #848383; border-radius: 15px}
-#bilan{background-color: #848383; padding: 1rem; border-top: 3px solid #525050}
+#bilan{background-color: #848383; padding: 4%; border-top: 3px solid #525050; color: #043F96; font-family: impact}
 
 
 @media all and (min-width: 767px){
@@ -67,15 +70,21 @@ header{padding: 2rem}
 h1{display: inline-block; padding-left: 1rem; border-left: 2rem solid #043F96}
 header p{font-size: 0.9rem}
 section{padding: 2rem}
+main h2, main h3, footer h2{padding: 1rem; font-family: impact; font-size: 2.5rem}
+footer h2{text-align: left; color: #043F96}
+main h3{color: #043F96}
+main p{font-size: 1rem; margin: 0}
 .upper1{font-size: 1.5rem}
 #upper2, h1{font-size: 2rem}
 #upper3{font-size: 4rem; display: inline-block}
 .block{display: inline}
-main{display: flex; justify-content: space-between; text-align: center}
-#colA{border-right: 3px solid #525050; flex: 1}
-#colB{flex: 3; padding: 0 3rem}
-#colA li:first-of-type{word-break: normal}
-#langues figure{flex-basis: 40%; display: inline-block; margin: 0}
-.langues{width: 5rem}
+.colA li:first-of-type{word-break: normal}
+#projets{display: flex}
+.langues{width: 6rem}
 #nuage{margin: auto}
+#flyer{display: flex}
+span{display: block}
+#gauche, #droite{flex-basis: 50%}
+#gauche div, #droite div{height: 200px}
+.fas{font-size: 4.5rem; color: white; margin-right: 2rem; float: left}
 }
